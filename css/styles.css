@@ -1,0 +1,15 @@
+@import url(pc.css);
+body{
+    background-color: #ffffff00;
+}
+
+/* flex */
+.flex{
+    display: flex;
+}
+.jsb{
+    justify-content: space-between;
+}
+.wrap{
+    flex-wrap: wrap;
+}
