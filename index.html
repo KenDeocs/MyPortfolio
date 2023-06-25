@@ -8,12 +8,37 @@
 </head>
 <body>
    
-    <video autoplay muted loop id="moving-background">
-        <source src="video/backgroun-neon.mp4" type="video/mp4">
-      </video>
 
-      <div class="content-container">
-        <h1 style="color: #fff;">Sample</h1>
+      <div class="main-container"  id="top-page">
+        <div class="container flex jsc">
+          <div class="picture-container">
+              <div class="my-picture">
+
+              </div>
+          </div>
+          <div class="contents">
+            sample content
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            sample content
+          </div>
+        </div>
       </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+      <script>
+        VANTA.BIRDS({
+          el: "#top-page",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0x0,
+          backgroundAlpha: 0.80
+        })
+        </script>
 </body>
 </html>

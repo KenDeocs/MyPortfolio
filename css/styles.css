@@ -1,6 +1,12 @@
-@import url(pc.css);
+
+@import url(pc.css) screen and (min-width: 641px);
+@import url(sp.css) screen and (max-width: 640px);
+@import url(reset.css);
+html {
+    scroll-behavior: smooth;
+  }
 body{
-    background-color: #ffffff00;
+    background-color: #000000;
 }
 
 /* flex */
@@ -10,6 +16,28 @@ body{
 .jsb{
     justify-content: space-between;
 }
+.jsc{
+    justify-content: center;
+}
 .wrap{
     flex-wrap: wrap;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #13131327; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00000057; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red; 
+  }
